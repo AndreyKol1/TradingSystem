@@ -18,7 +18,7 @@ async def lifespan(app):
                 await cur.execute(create_fear_greed_table())
                     
                 await conn.commit() # Make the changes to the database persistent
-                logger.info("Startup: Tables 'news_db, crypto_prices' are ready.")
+                logger.info("Startup: Tables 'crypto_news, crypto_prices, fear_greed_index' are ready.")
 
     except Exception as e:
         logger.error(f"Startup Error: Could not connect to DB. {e}")
