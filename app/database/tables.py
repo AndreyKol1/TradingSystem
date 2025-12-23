@@ -36,6 +36,3 @@ def create_fear_greed_table():
 
                         CONSTRAINT unique_greed_fear_item UNIQUE(time_stamp)
                         )"""
-                        
-
-
