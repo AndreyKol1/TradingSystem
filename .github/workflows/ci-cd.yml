@@ -32,6 +32,15 @@ jobs:
         env:
           GEMINI_API_KEY: "fakeKey"
           CRYPTO_API_KEY: "fakeKey"
+          POSTGRES_USER: "fakeKey"
+          POSTGRES_PASSWORD: "fakeKey"
+          POSTGRES_DB: "fakeKey"
+          POSTGRES_HOST: "fakeKey"
+          POSTGRES_PORT: "fakeKey"
+          API_BASE_URL: "fakeKey"
+          LANGFUSE_SECRET_KEY: "fakeKey"
+          LANGFUSE_PUBLIC_KEY: "fakeKey"
+          LANGFUSE_BASE_URL: "fakeKey"
         run: |
           uv run pytest
 
